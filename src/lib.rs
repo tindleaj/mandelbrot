@@ -37,6 +37,8 @@ pub fn parse_complex(s: &str) -> Option<Complex<f64>> {
     }
 }
 
+pub fn pixel_to_point(bounds: (usize, usize), pixel: (usize, usize)) {}
+
 #[cfg(test)]
 mod test {
     use super::*;
@@ -71,4 +73,7 @@ mod test {
         );
         assert_eq!(parse_complex(",-1.222"), None);
     }
+
+    #[test]
+    fn test_pixel_to_point() {}
 }
